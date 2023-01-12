@@ -37,35 +37,35 @@ public class Main {
    System.out.println(" Задача 3 ");
    int totalPopulation = 12000000;
    int birthRate =17;
-   int futureYears=0;
+   int futurePopulation=0;
    int mortalityRate =8;
-   while (futureYears < 10) {
-       futureYears++;
-       totalPopulation=totalPopulation+9*12;
-       System.out.println("Год " + futureYears +  " численность населения " + totalPopulation+ " составляет" );
+   while (futurePopulation < 10) {
+       futurePopulation++;
+       totalPopulation=(birthRate-mortalityRate)*1000+totalPopulation;
+       System.out.println("Год " + futurePopulation +  " численность населения составляет " + totalPopulation );
 
     }
 } public static void task4(){
    System.out.println(" Задача 4 ");
    int deposit =15000;
    int month=0;
-   while (month<99){
-       month++;
+        while (deposit <12000000) {
+            month++;
        deposit=deposit+(deposit*7/100);
-       System.out.println(" Сумма накоплений за " + month + "месяц равна "+ deposit + " равна" );
-
+       System.out.println("За " +  month  + " месяц  сумма накоплений  равна " + deposit);
    }
+
 
 
     } public static void task5(){
       System.out.println(" Задача 5");
       int deposit =15000;
       int month=0;
-      while (month <99){
+      while (deposit <12000000){
        month++;
        deposit =deposit+(deposit*7/100);
        if (month % 6 == 0){
-        System.out.println(" Сумма накоплений за " + month + " месяц равна " + deposit + " равна ");
+        System.out.println(" За " + month + " месяц сумма накоплений равна " + deposit);
       }
       }
       System.out.println(deposit);
@@ -85,15 +85,16 @@ public class Main {
 
          } public static void task7(){
           System.out.println(" Задача 7 ");
-          int data = 3;
-          int friday=0;
-          while(friday<4){
-           friday++;
-           data++;
-           System.out.println(" Сегодня пятница, " + data+ " число. Необходимо подготовить отчет");
+          int date = 6;
+          int friday=2;
+          while (friday<5){
+              friday++;
+              date=date+7;
+              System.out.println(" Сегодня пятница , "  +date + " число. Необходимо подготовить отчет");
 
           }
-    }public static void task8(){
+
+          }public static void task8(){
 
         System.out.println(" Задача 8");
         int year=1823;
